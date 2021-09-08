@@ -15,5 +15,4 @@ public class HashMain {
 		hash.print();
 
 	}
-
 }

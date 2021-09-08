@@ -68,7 +68,7 @@ public class HashTable<E, K>
 			}
 			temp = temp.next;
 		}
-		System.out.println("Frequency of '" + data + "' is :" + count);
+		System.out.println("Frequency of " + data + " is :" + count);
 	}
 
 	//this method is used to check if linked list is empty 
