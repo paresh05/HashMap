@@ -5,13 +5,12 @@ public class HashMain {
 	public static void main(String[] args) {
 		
 		HashTable<Integer, String> hash = new HashTable<Integer, String>();
+		String[] paragraph = {"Paranoids","are" ,"not" ,"paranoid" ,"because" ,"they" ,"are" ,"paranoid", "but" ,"because" ,"they" ,"keep" ,"putting" ,"themselves" ,"deliberately" ,"into" ,"paranoid" ,"avoidable" ,"situations"};
 
-		hash.insertNode(1, "to");
-		hash.insertNode(2, "be");
-		hash.insertNode(3, "or");
-		hash.insertNode(4, "not");
-		hash.insertNode(5, "to");
-		hash.insertNode(6, "be");
+		for(int i=0;i<paragraph.length;i++)
+		{
+			hash.insertNode(i, paragraph[i]);
+		}
 		hash.print();
 
 	}
