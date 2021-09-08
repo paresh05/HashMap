@@ -71,6 +71,32 @@ public class HashTable<E, K>
 		System.out.println("Frequency of " + data + " is :" + count);
 	}
 
+	/**
+	 * This function is used to delete the data passed
+	 * 
+	 * @return Nothing
+	 */
+	public void delete(K data) 
+	{
+		current = head;
+		temp = current.next;
+		if (current.data.equals(data)) 
+		{
+			head = current.next;
+		}
+		while (temp != null) 
+		{
+			if (temp.data.equals(data)) 
+			{
+				current.next = temp.next;
+				System.out.println("Deleted " + temp.data );
+			}
+			temp = temp.next;
+			current = current.next;
+		}
+		print();
+	}
+	
 	//this method is used to check if linked list is empty 
 	
 	public Boolean isEmpty() 

@@ -12,6 +12,8 @@ public class HashMain {
 			hash.insertNode(i, paragraph[i]);
 		}
 		hash.print();
+		
+		hash.delete("avoidable");
 
 	}
 }
